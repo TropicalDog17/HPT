@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+        <link
+            href="http://fonts.googleapis.com/css?family=Comfortaa"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script
+            src="https://cdn.socket.io/4.6.0/socket.io.min.js"
+            integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+"
+            crossorigin="anonymous"
+        ></script>
+        <title>Distributed Systems Course</title>
+    </head>
+    <body>
+        <header>
+            <h1>Chat room for Distributed Systems class</h1>
+        </header>
+        <section>
+            <div id="change_username">
+                <input id="username" type="text" />
+                <button id="send_username" type="button">
+                    Change username
+                </button>
+            </div>
+        </section>
+        <section id="chatroom">
+            <section id="feedback"></section>
+        </section>
+        <section id="input_zone">
+            <input id="message" class="vertical-align" type="text" />
+            <button id="send_message" class="vertical-align" type="button">
+                Send
+            </button>
+        </section>
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.min.js"
+            integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+            crossorigin="anonymous"
+        ></script>
+        <script src="chat.js"></script>
+    </body>
+</html>
